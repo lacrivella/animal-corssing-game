@@ -4,26 +4,33 @@ body {
     object-fit: cover;
     text-align: center;
     font-family: 'Chathura', sans-serif;
+    font-size: 2em;
+    color: #356162;
 }
-img.logo {
+
+.logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    height: 225px;
 }
+
 h1 {
     font-family: 'Fredoka One', cursive;
 }
 
 h2 {
     font-family: 'Chathura', sans-serif;
+    margin: -20px;
 }
-/* label {
-    display: flex;
-    align-items: ;
-    justify-content: ;
-} */
+
 button {
     height: 50px;
     width: 125px;
     font-family: 'Fredoka One', cursive;
+}
+fieldset {
+    border: none;
+    margin: auto;
+    width: 500px;
 }
