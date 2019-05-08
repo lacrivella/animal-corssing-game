@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Choose an Advenute</title>
+    <link rel="stylesheet" href="src/main.css">
+</head>
+<body>
+    <header>
+        <section class="user-info">
+            <img class="img" id="animal">
+            <span id="name"></span>
+            <img src="assets/bells.png" alt="small bag of bells">
+            bells: 
+            <span id="bells"></span>
+            <img src="assets/heart.png" alt="small pink heart">
+            friendship: 
+            <span id="friendship"></span>
+        </section>
+    </header>
+    <main>
+        <h2>FISHING</h2>
+         <!-- <img src="assets/main/fishing.png" alt="animals fishing at a small pond"> -->
+        <p id="description">
+            You are enjoying a peaceful morning fishing when you feel a tug on your line. WOAH! You just caught a huge Tuna!<br>
+            Olivia, the cat, congratulates you on your sweet catch. She asks if you want to do a trade, your tuna for a mysery item.
+            Do you...
+        </p>
+        <form id="choice-form">
+            <label>
+                <input type="radio" name="animal" value="cat"> 
+                Accept the trade with Olivia
+            </label>
+            <label>
+                <input type="radio" name="animal" value="cat">
+                Say thanks, but no thanks, and sell the fish in market.
+            </label>
+            <label>
+                <input type="radio" name="animal" value="cat">
+                Throw the fish back into the ocean.
+            </label>
+            <button>Choose</button>
+        </form>
+        <section id="result">
+            <a href="./map.html">Choose Another Adventure</a>
+        </section>
+    </main>
+</body>
+</html>
