@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Your Adventure</title>
     <link rel="stylesheet" href="src/main.css">
+    <link rel="stylesheet" href="src/quest/quest.css">
 </head>
 <body>
     <header>
@@ -21,7 +22,7 @@
         </section>
     </header>
     <main>
-        <h2>FISHING</h2>
+        <h2>GONE FISHIN'</h2>
          <!-- <img src="assets/main/fishing.png" alt="animals fishing at a small pond"> -->
         <p id="description">
             You are enjoying a peaceful morning fishing when you feel a tug on your line. WOAH! You just caught a huge Tuna!<br>
@@ -29,19 +30,23 @@
             Do you...
         </p>
         <form id="choice-form">
-            <label>
-                <input type="radio" name="animal" value="cat"> 
-                Accept the trade with Olivia
-            </label>
-            <label>
-                <input type="radio" name="animal" value="cat">
-                Say thanks, but no thanks, and sell the fish in market.
-            </label>
-            <label>
-                <input type="radio" name="animal" value="cat">
-                Throw the fish back into the ocean.
-            </label>
-            <button>Choose</button>
+            <div class="wrapper">
+                <label>
+                    <input type="radio" name="animal" value="cat"> 
+                    Accept the trade with Olivia
+                </label>
+                <label>
+                    <input type="radio" name="animal" value="cat">
+                    Say thanks, but no thanks, and sell the fish in market.
+                </label>
+                <label>
+                    <input type="radio" name="animal" value="cat">
+                    Throw the fish back into the ocean.
+                </label>
+            </div>
+            <section>
+                <button>Choose</button>
+            </section>
         </form>
         <section id="result">
             <a href="./map.html">Choose Another Adventure</a>
