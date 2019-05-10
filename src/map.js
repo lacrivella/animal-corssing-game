@@ -1,20 +1,15 @@
-import api from './api.js';
+import api from './services/api.js';
+import loadProfile from './load-profile.js';
+import createAdventureLink from './map/create-quest-link.js';
 
-// reference DOM
-const name = document.getElementById('name');
-const animal = document.getElementById('animal');
-const bells = document.getElementById('bells');
-const friendship = document.getElementById('friendship');
+loadProfile();
 
-//load profile with user
-const user = api.getUser();
+const quests = api.getQuests();
 
-if(!user) {
-    window.location = './';
+const nav = document.getElementById('quests');
+
+for (let i = 0; i < quests.length; i++) {
+    const quest = quests[i];
+    const link = createAdventureLink(quest);
+    nav.appendChild(link);
 }
-
-//copy data from object to DOM properties
-name.textContent = user.name;
-animal.src = './assets/avatars/' + user.animal + '.png';
-bells.textContent = user.bells;
-friendship.textContent = user.friendship;
