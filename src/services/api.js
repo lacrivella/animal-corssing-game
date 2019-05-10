@@ -1,4 +1,5 @@
 import questData from './quest-data.js';
+import findById from '../find-by-id.js';
 
 const api = {
     // used by testing to control where API saves data
@@ -20,6 +21,9 @@ const api = {
     },
     getQuests() {
         return questData;
+    },
+    getQuest(id) {
+        return findById(questData, id);
     }
 };
 export default api;
