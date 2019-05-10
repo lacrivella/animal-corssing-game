@@ -14,7 +14,7 @@ test('create correct link html', function(assert) {
     };
 
     //use your static html example
-    const expected = '<a class="quest" href="quest.html?id=shopping"><img src="assets/main/shopping.png"></a>';
+    const expected = '<a class="quest" href="quest.html?id=shopping"><img src="./assets/main/shopping.png"></a>';
 
     //Act 
     // Call the function you're testing and set the result to a const

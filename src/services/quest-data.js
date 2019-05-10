@@ -1,10 +1,6 @@
 const fishing = {
     id: 'fishing',
     title: 'Gone Fishin',
-    image: {
-        src: 'fishing.png',
-        alt: 'animals fishing at a small pond'
-    },
     description: `
         You are enjoying a peaceful morning fishing when you feel a tug on your line. WOAH! You just caught a huge Tuna!
         Olivia, the cat, congratulates you on your sweet catch. She asks if you want to do a trade, your tuna for a mystery item.
@@ -39,10 +35,6 @@ const fishing = {
 const camping = {
     id: 'camping',
     title: 'Only You Can Prevent Forest Fires',
-    image: {
-        src: 'camping.png',
-        alt: 'teddy tear enjoying coffee at a campsite'
-    },
     description: `
         You are enjoying a sunny weekend camping by yourself. 
         You notice over at the other camp Ursala, the bear, has forgottem tp put out her fire pit.
@@ -83,10 +75,6 @@ const camping = {
 const shopping = {
     id: 'shopping',
     title: 'OMG, Shoes!',
-    image: {
-        src: 'shopping.png',
-        alt: 'hedgehogs selling clothes outside a camper'
-    },
     description: `
         It's pay day, and you decide to go downtown to shop around. You know you should be saving your money, 
         but you see that Labelle, the hedgehog, is selling those designer shoes you've had your eyes on for $100.

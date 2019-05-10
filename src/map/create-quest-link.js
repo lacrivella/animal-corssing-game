@@ -1,7 +1,8 @@
 function createAdventureLink(quest) {
     const link = document.createElement('a');
     const img = document.createElement('img');
-    img.src = 'assets/main/' + quest.image;
+    img.setAttribute('src', './assets/main/' + quest.id + '.png');
+    // img.src = 'assets/main/' + quest.image;
     
     link.classList.add('quest');
 
