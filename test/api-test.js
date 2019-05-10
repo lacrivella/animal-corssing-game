@@ -1,4 +1,6 @@
 import api from '../src/api.js';
+import questData from '../src/services/quest-data.js';
+
 const test = QUnit.test;
 
 QUnit.module('api');
@@ -21,4 +23,13 @@ test('signUp sets user and returns on getUser', (assert) => {
     const result = api.getUser();
     //assert
     assert.deepEqual(result, user);
+});
+
+test('returns lists of adventures', (assert) => {
+    // arrange
+    const expected = questData;
+    // act
+    const quests = api.getQuests();
+    // assert
+    assert.deepEqual(quests, expected);
 });

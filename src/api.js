@@ -1,3 +1,5 @@
+import questData from './services/quest-data.js';
+
 const api = {
     // used by testing to control where API saves data
     storage: localStorage,
@@ -15,6 +17,9 @@ const api = {
         if(!json) return null;
         const user = JSON.parse(json);
         return user;
+    },
+    getQuests() {
+        return questData;
     }
 };
 export default api;
