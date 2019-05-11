@@ -22,35 +22,23 @@
         </section>
     </header>
     <main>
-        <h2>GONE FISHIN'</h2>
+        <h2 id="title"></h2>
          <!-- <img src="assets/main/fishing.png" alt="animals fishing at a small pond"> -->
         <p id="description">
-            You are enjoying a peaceful morning fishing when you feel a tug on your line. WOAH! You just caught a huge Tuna!<br>
-            Olivia, the cat, congratulates you on your sweet catch. She asks if you want to do a trade, your tuna for a mysery item.
-            Do you...
         </p>
         <form id="choice-form">
             <div class="wrapper">
-                <label>
-                    <input type="radio" name="animal" value="cat"> 
-                    Accept the trade with Olivia
-                </label>
-                <label>
-                    <input type="radio" name="animal" value="cat">
-                    Say thanks, but no thanks, and sell the fish in market.
-                </label>
-                <label>
-                    <input type="radio" name="animal" value="cat">
-                    Throw the fish back into the ocean.
-                </label>
+                <p id="choices"></p>
             </div>
             <section>
                 <button>Choose</button>
             </section>
         </form>
-        <section id="result">
+        <section id="result" class="hidden">
+            <p id="result-description"></p>
             <a href="./map.html">Choose Another Adventure</a>
         </section>
     </main>
+    <script type="module" src="src/quest/quest.js"></script>
 </body>
 </html>
