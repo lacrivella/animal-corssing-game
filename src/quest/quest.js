@@ -23,7 +23,7 @@ choiceForm.classList.add('hidden');
 result.classList.remove('hidden');
 resultDescription.textContent = choices.result;
 
-for (let i = 0; i < quest.choices; i++) {
+for(let i = 0; i < quest.choices; i++) {
     const choice = quest.choices[i];
     const questions = createChoice(choice);
     choiceForm.appendChild(questions);
