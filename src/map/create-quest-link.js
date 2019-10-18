@@ -7,6 +7,7 @@ function createAdventureLink(quest) {
     link.classList.add('quest');
 
     const searchParams = new URLSearchParams();
+    console.log(searchParams, 'search')
     searchParams.set('id', quest.id);
     link.href = 'quest.html?' + searchParams.toString();
     link.appendChild(img);
