@@ -1,0 +1,15 @@
+import api from './services/api.js';
+import loadProfile from './load-profile.js';
+import createAdventureLink from './map/create-quest-link.js';
+
+loadProfile();
+
+const quests = api.getQuests();
+
+const nav = document.getElementById('quests');
+
+for (let i = 0; i < quests.length; i++) {
+    const quest = quests[i];
+    const link = createAdventureLink(quest);
+    nav.appendChild(link);
+}

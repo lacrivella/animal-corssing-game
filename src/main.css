@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Chathura|Fredoka+One|Kosugi+Maru');
+body {
+    background-image: url('/assets/animalcrossing.jpg');
+    object-fit: cover;
+    text-align: center;
+    font-family: 'Chathura', sans-serif;
+    font-size: 2em;
+    color: #356162;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 215px;
+    margin-top: -15px;
+}
+
+h1 {
+    font-family: 'Fredoka One', cursive;
+}
+
+#choose {
+    background-color: rgba(246, 244, 229, .3);
+    width: 700px;
+    margin: auto;
+}
+h2 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1em;
+    margin: -20px;
+}
+
+button {
+    height: 50px;
+    width: 125px;
+    font-family: 'Fredoka One', cursive;
+    font-size: .5em;
+    margin: none;
+    color: #E2B15A;
+    background-color: rgb(246, 244, 229); 
+    border: none;
+}
+fieldset {
+    border: none;
+    margin: auto;
+    width: 500px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animal Crossing Game</title>
+    <link rel="stylesheet" href="src/main.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="assets/250px-Animal_Crossing_Logo.png" alt="cartoonish logo in yellow that reads Animal Crossing">
+    </header>
+    <main id="choose">
+        <h2>Choose Your Own Adventure!</h2>
+        <form id="sign-up">
+            <label>Your Villagers Name:</label>
+            <input id="name" name="name" placeholder="enter name here" required>
+            <fieldset>
+                <legend>Choose Your Animal:</legend>
+                <label>
+                    <input type="radio" name="animal" value="chicken">
+                    <img src="assets/avatars/chicken.png" alt="cartoon white chicken with angry eyebrows">
+                    Chicken
+                </label>
+                <label>
+                    <input type="radio" name="animal" value="deer">
+                    <img src="assets/avatars/deer.png" alt="cartoon brown doe">
+                    Deer
+                </label>
+                <label>
+                    <input type="radio" name="animal" value="cat">
+                    <img src="assets/avatars/cat.png" alt="cartoon black and white cat">
+                    Cat
+                </label>
+            </fieldset>
+            <button>Go To Town!</button>
+        </form>
+    </main>
+    <script type="module" src="/src/index.js"></script>
+</body>
+</html>

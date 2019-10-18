@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your Adventure</title>
+    <link rel="stylesheet" href="src/main.css">
+    <link rel="stylesheet" href="src/quest/quest.css">
+</head>
+<body>
+    <header>
+        <section class="user-info">
+            <img class="img" id="animal">
+            <span id="name"></span>
+            <img src="assets/bells.png" alt="small bag of bells">
+            bells: 
+            <span id="bells"></span>
+            <img src="assets/heart.png" alt="small pink heart">
+            friendship: 
+            <span id="friendship"></span>
+        </section>
+    </header>
+    <main>
+        <h2 id="title"></h2>
+         <!-- <img src="assets/main/fishing.png" alt="animals fishing at a small pond"> -->
+        <p id="description">
+        </p>
+        <form id="choice-form">
+            <div class="wrapper">
+                <p id="choices"></p>
+            </div>
+            <section>
+                <button>Choose</button>
+            </section>
+        </form>
+        <section id="result" class="hidden">
+            <p id="result-description"></p>
+            <a href="./map.html">Choose Another Adventure</a>
+        </section>
+    </main>
+    <script type="module" src="src/quest/quest.js"></script>
+</body>
+</html>
